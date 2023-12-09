@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('/christmas-decoration-christmas-background-red-background-5760x3840-3881.jpg'); /* Set the background image */
+      background-size: cover; /* Cover the entire viewport */
+      font-family: 'Inter', sans-serif;
+      weight: '800'
+    }
+
+
+    .main-container {
+      text-align: center;
+    }
+
+    .big-text {
+      font-size: 10em;
+      color: #ffffff; /* Big red text */
+      font-weight: bold; /* Increase boldness/thickness */
+    }
+
+    .small-text {
+      font-size: 2em;
+      color: #ffffff;
+    }
+    .smaller-text {
+        font-size: 0.5em;
+        color: #ffffff;
+      }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="big-text"><%= currentAmount %> RON</div>
+    <div class="small-text">Suma totală adunată</div>
+    <br><br><br><br><br>
+    <div class="smaller-text">
+        Many thanks to: <%= namesList.join(', ') %>
+      </div>
+  </div>
+  
+</body>
+</html>
